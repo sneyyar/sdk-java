@@ -15,8 +15,8 @@ package marketcheck.cars.api.client.api;
 
 import marketcheck.cars.api.client.ApiException;
 import java.math.BigDecimal;
-import marketcheck.cars.api..client.model.Error;
-import marketcheck.cars.api..client.model.HistoricalListing;
+import marketcheck.cars.api.client.model.Error;
+import marketcheck.cars.api.client.model.HistoricalListing;
 import org.junit.Test;
 import org.junit.Ignore;
 

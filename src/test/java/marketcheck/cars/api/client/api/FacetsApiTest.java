@@ -14,8 +14,8 @@
 package marketcheck.cars.api.client.api;
 
 import marketcheck.cars.api.client.ApiException;
-import marketcheck.cars.api..client.model.Error;
-import marketcheck.cars.api..client.model.FacetItem;
+import marketcheck.cars.api.client.model.Error;
+import marketcheck.cars.api.client.model.FacetItem;
 import org.junit.Test;
 import org.junit.Ignore;
 

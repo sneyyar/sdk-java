@@ -14,11 +14,11 @@
 package marketcheck.cars.api.client.api;
 
 import marketcheck.cars.api.client.ApiException;
-import marketcheck.cars.api..client.model.Build;
-import marketcheck.cars.api..client.model.Economy;
-import marketcheck.cars.api..client.model.Error;
-import marketcheck.cars.api..client.model.FuelEfficiency;
-import marketcheck.cars.api..client.model.SafetyRating;
+import marketcheck.cars.api.client.model.Build;
+import marketcheck.cars.api.client.model.Economy;
+import marketcheck.cars.api.client.model.Error;
+import marketcheck.cars.api.client.model.FuelEfficiency;
+import marketcheck.cars.api.client.model.SafetyRating;
 import org.junit.Test;
 import org.junit.Ignore;
 

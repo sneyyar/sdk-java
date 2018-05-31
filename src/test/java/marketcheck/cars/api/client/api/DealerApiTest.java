@@ -14,13 +14,13 @@
 package marketcheck.cars.api.client.api;
 
 import marketcheck.cars.api.client.ApiException;
-import marketcheck.cars.api..client.model.BaseListing;
-import marketcheck.cars.api..client.model.Dealer;
-import marketcheck.cars.api..client.model.DealerLandingPage;
-import marketcheck.cars.api..client.model.DealerRating;
-import marketcheck.cars.api..client.model.DealerReview;
-import marketcheck.cars.api..client.model.DealersResponse;
-import marketcheck.cars.api..client.model.Error;
+import marketcheck.cars.api.client.model.BaseListing;
+import marketcheck.cars.api.client.model.Dealer;
+import marketcheck.cars.api.client.model.DealerLandingPage;
+import marketcheck.cars.api.client.model.DealerRating;
+import marketcheck.cars.api.client.model.DealerReview;
+import marketcheck.cars.api.client.model.DealersResponse;
+import marketcheck.cars.api.client.model.Error;
 import org.junit.Test;
 import org.junit.Ignore;
 
