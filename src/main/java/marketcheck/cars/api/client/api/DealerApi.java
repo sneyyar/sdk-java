@@ -13,6 +13,15 @@
 
 package marketcheck.cars.api.client.api;
 
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.google.gson.reflect.TypeToken;
+
 import marketcheck.cars.api.client.ApiCallback;
 import marketcheck.cars.api.client.ApiClient;
 import marketcheck.cars.api.client.ApiException;
@@ -21,25 +30,12 @@ import marketcheck.cars.api.client.Configuration;
 import marketcheck.cars.api.client.Pair;
 import marketcheck.cars.api.client.ProgressRequestBody;
 import marketcheck.cars.api.client.ProgressResponseBody;
-
-import com.google.gson.reflect.TypeToken;
-
-import java.io.IOException;
-
-
-import marketcheck.cars.api..client.model.BaseListing;
-import marketcheck.cars.api..client.model.Dealer;
-import marketcheck.cars.api..client.model.DealerLandingPage;
-import marketcheck.cars.api..client.model.DealerRating;
-import marketcheck.cars.api..client.model.DealerReview;
-import marketcheck.cars.api..client.model.DealersResponse;
-import marketcheck.cars.api..client.model.Error;
-
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import marketcheck.cars.api.client.model.BaseListing;
+import marketcheck.cars.api.client.model.Dealer;
+import marketcheck.cars.api.client.model.DealerLandingPage;
+import marketcheck.cars.api.client.model.DealerRating;
+import marketcheck.cars.api.client.model.DealerReview;
+import marketcheck.cars.api.client.model.DealersResponse;
 
 public class DealerApi {
     private ApiClient apiClient;

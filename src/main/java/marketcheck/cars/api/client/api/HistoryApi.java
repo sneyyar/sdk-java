@@ -28,8 +28,8 @@ import java.io.IOException;
 
 
 import java.math.BigDecimal;
-import marketcheck.cars.api..client.model.Error;
-import marketcheck.cars.api..client.model.HistoricalListing;
+import marketcheck.cars.api.client.model.Error;
+import marketcheck.cars.api.client.model.HistoricalListing;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;

@@ -11,7 +11,7 @@
  */
 
 
-package marketcheck.cars.api..client.model;
+package marketcheck.cars.api.client.model;
 
 import java.util.Objects;
 import java.util.Arrays;

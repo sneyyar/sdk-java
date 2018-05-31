@@ -27,8 +27,8 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import marketcheck.cars.api..client.model.Error;
-import marketcheck.cars.api..client.model.FacetItem;
+import marketcheck.cars.api.client.model.Error;
+import marketcheck.cars.api.client.model.FacetItem;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;

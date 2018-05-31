@@ -11,7 +11,7 @@
  */
 
 
-package marketcheck.cars.api..client.model;
+package marketcheck.cars.api.client.model;
 
 import java.util.Objects;
 import java.util.Arrays;
@@ -24,11 +24,11 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
 import java.math.BigDecimal;
-import marketcheck.cars.api..client.model.Build;
-import marketcheck.cars.api..client.model.Dealer;
-import marketcheck.cars.api..client.model.ListingExtraAttributes;
-import marketcheck.cars.api..client.model.ListingMedia;
-import marketcheck.cars.api..client.model.Location;
+import marketcheck.cars.api.client.model.Build;
+import marketcheck.cars.api.client.model.Dealer;
+import marketcheck.cars.api.client.model.ListingExtraAttributes;
+import marketcheck.cars.api.client.model.ListingMedia;
+import marketcheck.cars.api.client.model.Location;
 
 /**
  * Represents a full list of attributes available with Marketcheck for a car
@@ -61,7 +61,7 @@ public class Listing {
   private String inventoryType = null;
 
   @SerializedName("scraped_at_date")
-  private BigDecimal scrapedAtDate = null;
+  private String scrapedAtDate = null;
 
   @SerializedName("first_seen_at")
   private BigDecimal firstSeenAt = null;
@@ -255,7 +255,7 @@ public class Listing {
     this.inventoryType = inventoryType;
   }
 
-  public Listing scrapedAtDate(BigDecimal scrapedAtDate) {
+  public Listing scrapedAtDate(String scrapedAtDate) {
     this.scrapedAtDate = scrapedAtDate;
     return this;
   }
@@ -265,11 +265,11 @@ public class Listing {
    * @return scrapedAtDate
   **/
   @ApiModelProperty(value = "Listing first seen at first scraped date")
-  public BigDecimal getScrapedAtDate() {
+  public String getScrapedAtDate() {
     return scrapedAtDate;
   }
 
-  public void setScrapedAtDate(BigDecimal scrapedAtDate) {
+  public void setScrapedAtDate(String scrapedAtDate) {
     this.scrapedAtDate = scrapedAtDate;
   }
 

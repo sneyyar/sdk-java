@@ -11,10 +11,12 @@
  */
 
 
-package marketcheck.cars.api..client.model;
+package marketcheck.cars.api.client.model;
 
 import java.util.Objects;
 import java.util.Arrays;
+import java.util.List;
+
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -24,9 +26,9 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
 import java.math.BigDecimal;
-import marketcheck.cars.api..client.model.Build;
-import marketcheck.cars.api..client.model.Dealer;
-import marketcheck.cars.api..client.model.ListingMedia;
+import marketcheck.cars.api.client.model.Build;
+import marketcheck.cars.api.client.model.Dealer;
+import marketcheck.cars.api.client.model.ListingMedia;
 
 /**
  * Minimal set of attributes describing a listing
@@ -62,7 +64,7 @@ public class BaseListing {
   private String lastSeenAtDate = null;
 
   @SerializedName("scraped_at_date")
-  private BigDecimal scrapedAtDate = null;
+  private String scrapedAtDate = null;
 
   @SerializedName("first_seen_at")
   private BigDecimal firstSeenAt = null;
@@ -108,6 +110,12 @@ public class BaseListing {
 
   @SerializedName("media")
   private ListingMedia media = null;
+  
+  @SerializedName("financing_options")
+  private List<FinancingOption> financingOptions;
+  
+  @SerializedName("leasing_options")
+  private List<LeasingOption> leasingOptions;
 
   @SerializedName("build")
   private Build build = null;
@@ -283,7 +291,7 @@ public class BaseListing {
     this.lastSeenAtDate = lastSeenAtDate;
   }
 
-  public BaseListing scrapedAtDate(BigDecimal scrapedAtDate) {
+  public BaseListing scrapedAtDate(String scrapedAtDate) {
     this.scrapedAtDate = scrapedAtDate;
     return this;
   }
@@ -293,11 +301,11 @@ public class BaseListing {
    * @return scrapedAtDate
   **/
   @ApiModelProperty(value = "Listing first seen at first scraped date")
-  public BigDecimal getScrapedAtDate() {
+  public String getScrapedAtDate() {
     return scrapedAtDate;
   }
 
-  public void setScrapedAtDate(BigDecimal scrapedAtDate) {
+  public void setScrapedAtDate(String scrapedAtDate) {
     this.scrapedAtDate = scrapedAtDate;
   }
 
@@ -571,7 +579,23 @@ public class BaseListing {
     this.media = media;
   }
 
-  public BaseListing build(Build build) {
+  public List<FinancingOption> getFinancingOption() {
+	return financingOptions;
+}
+
+public void setFinancingOption(List<FinancingOption> financialOptions) {
+	this.financingOptions = financialOptions;
+}
+
+public List<LeasingOption> getLeasingOptions() {
+	return leasingOptions;
+}
+
+public void setLeasingOptions(List<LeasingOption> leasingOptions) {
+	this.leasingOptions = leasingOptions;
+}
+
+public BaseListing build(Build build) {
     this.build = build;
     return this;
   }
@@ -720,6 +744,8 @@ public class BaseListing {
     sb.append("    vdpUrl: ").append(toIndentedString(vdpUrl)).append("\n");
     sb.append("    source: ").append(toIndentedString(source)).append("\n");
     sb.append("    media: ").append(toIndentedString(media)).append("\n");
+    sb.append("    financialOptions: ").append(toIndentedString(financingOptions)).append("\n");
+    sb.append("    LeasingOptions: ").append(toIndentedString(leasingOptions)).append("\n");
     sb.append("    build: ").append(toIndentedString(build)).append("\n");
     sb.append("    dealer: ").append(toIndentedString(dealer)).append("\n");
     sb.append("    isCertified: ").append(toIndentedString(isCertified)).append("\n");

@@ -11,7 +11,7 @@
  */
 
 
-package marketcheck.cars.api..client.model;
+package marketcheck.cars.api.client.model;
 
 import java.util.Objects;
 import java.util.Arrays;
@@ -25,9 +25,9 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import marketcheck.cars.api..client.model.CompetitorsCarDetails;
-import marketcheck.cars.api..client.model.CompetitorsSameCars;
-import marketcheck.cars.api..client.model.CompetitorsSimilarCars;
+import marketcheck.cars.api.client.model.CompetitorsCarDetails;
+import marketcheck.cars.api.client.model.CompetitorsSameCars;
+import marketcheck.cars.api.client.model.CompetitorsSimilarCars;
 
 /**
  * CompetitorsPoint

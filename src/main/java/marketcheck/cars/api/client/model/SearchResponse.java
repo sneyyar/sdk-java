@@ -11,7 +11,7 @@
  */
 
 
-package marketcheck.cars.api..client.model;
+package marketcheck.cars.api.client.model;
 
 import java.util.Objects;
 import java.util.Arrays;
@@ -26,7 +26,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
-import marketcheck.cars.api..client.model.BaseListing;
+import marketcheck.cars.api.client.model.BaseListing;
 
 /**
  * Search query response

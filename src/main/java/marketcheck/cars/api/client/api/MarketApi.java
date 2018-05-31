@@ -27,14 +27,14 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import marketcheck.cars.api..client.model.Averages;
-import marketcheck.cars.api..client.model.ComparisonPoint;
-import marketcheck.cars.api..client.model.CompetitorsPoint;
-import marketcheck.cars.api..client.model.DepreciationPoint;
-import marketcheck.cars.api..client.model.Error;
-import marketcheck.cars.api..client.model.Mds;
-import marketcheck.cars.api..client.model.PopularityItem;
-import marketcheck.cars.api..client.model.TrendPoint;
+import marketcheck.cars.api.client.model.Averages;
+import marketcheck.cars.api.client.model.ComparisonPoint;
+import marketcheck.cars.api.client.model.CompetitorsPoint;
+import marketcheck.cars.api.client.model.DepreciationPoint;
+import marketcheck.cars.api.client.model.Error;
+import marketcheck.cars.api.client.model.Mds;
+import marketcheck.cars.api.client.model.PopularityItem;
+import marketcheck.cars.api.client.model.TrendPoint;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;

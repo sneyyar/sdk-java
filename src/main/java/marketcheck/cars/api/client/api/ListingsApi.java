@@ -27,13 +27,13 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import marketcheck.cars.api..client.model.Error;
-import marketcheck.cars.api..client.model.Listing;
-import marketcheck.cars.api..client.model.ListingExtraAttributes;
-import marketcheck.cars.api..client.model.ListingMedia;
-import marketcheck.cars.api..client.model.ListingVDP;
-import marketcheck.cars.api..client.model.SearchResponse;
-import marketcheck.cars.api..client.model.VinReport;
+import marketcheck.cars.api.client.model.Error;
+import marketcheck.cars.api.client.model.Listing;
+import marketcheck.cars.api.client.model.ListingExtraAttributes;
+import marketcheck.cars.api.client.model.ListingMedia;
+import marketcheck.cars.api.client.model.ListingVDP;
+import marketcheck.cars.api.client.model.SearchResponse;
+import marketcheck.cars.api.client.model.VinReport;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
